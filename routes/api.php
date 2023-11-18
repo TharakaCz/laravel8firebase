@@ -23,5 +23,7 @@ Route::controller(\App\Http\Controllers\UserController::class)->prefix('user')->
     Route::post('auth', 'auth');
     Route::post('registration', 'register');
     Route::post('anonymous/auth', 'signInAnonymously');
+    Route::post('verify', 'verifyToken');
     Route::get('all', 'getUsers');
+    Route::post('social', 'socialLogin');
 });
